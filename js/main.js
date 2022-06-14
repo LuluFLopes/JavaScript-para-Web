@@ -4,4 +4,4 @@ function tocaSomPom() {
 
 }
 
-document.querySelector('.tecla_pom').onclick = tocaSomPom;
+document.querySelectorAll('.tecla').onclick = tocaSomPom;
