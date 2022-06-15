@@ -4,4 +4,4 @@ function tocaSomPom() {
 
 }
 
-document.querySelectorAll('.tecla').onclick = tocaSomPom;
+const listaDeTeclas = document.querySelectorAll('.tecla');
