@@ -10,11 +10,21 @@ let i = 0;
 
 while (i < listaDeTeclas.length) {
 
+    const tecla = listaDeTeclas[i];
+
+    const instrumento = tecla.classList[1];
+
+    // Template string
+    const idAudio = `#som_${instrumento}`;
+
     listaDeTeclas[i].onclick = function () {
-        tocaSom('#som_tecla_tom');
+
+        tocaSom(idAudio);
+
     };
 
     i++;
-    console.log(i);
 
+    //console.log(i);
+    
 }
