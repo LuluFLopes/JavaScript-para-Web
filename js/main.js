@@ -10,7 +10,10 @@ let i = 0;
 
 while (i < listaDeTeclas.length) {
 
-    listaDeTeclas[i].onclick = tocaSom;
+    listaDeTeclas[i].onclick = function () {
+        tocaSom('#som_tecla_tom');
+    };
+
     i++;
     console.log(i);
 
