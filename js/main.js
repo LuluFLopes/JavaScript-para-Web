@@ -24,6 +24,14 @@ for (let i = 0; i < listaDeTeclas.length; i++) {
     tecla.onkeydown = function () {
 
         tecla.classList.add('ativa');
+        tecla.classList.add('active');
+
+    }
+
+    tecla.onkeyup = function () {
+
+        tecla.classList.remove('ativa');
+        tecla.classList.remove('active');
 
     }
 
