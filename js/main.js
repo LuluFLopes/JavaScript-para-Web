@@ -21,17 +21,21 @@ for (let i = 0; i < listaDeTeclas.length; i++) {
         tocaSom(idAudio);
     };
 
-    tecla.onkeydown = function () {
+    tecla.onkeydown = function (evento) {
 
-        tecla.classList.add('ativa');
-        tecla.classList.add('active');
+        if (evento.code === 'Space') {
+
+            tecla.classList.add('ativa');
+            tecla.classList.add('active');
+
+        }
 
     }
 
     tecla.onkeyup = function () {
-
-        tecla.classList.remove('ativa');
-        tecla.classList.remove('active');
+        
+            tecla.classList.remove('ativa');
+            tecla.classList.remove('active');
 
     }
 
