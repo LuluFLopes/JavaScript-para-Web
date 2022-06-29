@@ -21,6 +21,12 @@ for (let i = 0; i < listaDeTeclas.length; i++) {
         tocaSom(idAudio);
     };
 
+    tecla.onkeydown = function () {
+
+        tecla.classList.add('ativa');
+
+    }
+
     //console.log(i);
 
 }
